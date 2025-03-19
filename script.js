@@ -33,3 +33,19 @@ if (swiper.activeIndex === 0) {
 function scrollToSection() {
   swiper.slideTo(1);
 }
+const video = document.querySelector(".auto-play-video");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  },
+  { threshold: 0.5 }
+); // Adjust threshold if needed
+
+observer.observe(video);

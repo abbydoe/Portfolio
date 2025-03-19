@@ -137,7 +137,14 @@ header nav a {
   vertical-align: top;
   padding-right: 40px;
 }
-
+.auto-play-video {
+  width: 50%;
+  height: 70%;
+  object-fit: contain;
+  z-index: 0;
+  vertical-align: top;
+  padding-right: 40px;
+}
 .first {
   display: flex;
   padding-left: 16px;
