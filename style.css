@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 100px;
+  background-color: transparent; /* Make header transparent */
+  position: absolute; /* Place it on top of Hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensure it's above other elements */
+  color: white; /* Ensure text is readable on dark background */
+}
+h2 {
+  font-family: "verdana", sans-serif;
+  font-weight: 400;
+  color: rgb(199, 199, 199);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 48px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  padding-right: 24px;
+  z-index: 2;
+  font-family: "verdana", sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  padding: 0 0px;
+  position: relative;
+  z-index: 1; /* Prevents conflicts with absolute header */
+}
+
+/* Gradient overlay that sits on top of the image but below text */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  background: linear-gradient(to right, black 45%, transparent 80%);
+  z-index: 2; /* Ensures it is above the image but below text */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row-reverse;
+  background-color: black;
+}
+
+.content h1 {
+  font-size: 72px;
+  margin: 0;
+  padding-left: 40px;
+  padding-bottom: 0px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+.content p {
+  font-size: 18px;
+  margin-top: 40px;
+  padding-left: 40px;
+  max-width: 500px;
+  line-height: 29.124px;
+  font-family: "verdana", sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+  color: white;
+}
+.content button {
+  margin-left: 40px;
+  background-color: transparent;
+  color: white;
+  border: white 1px solid;
+  cursor: pointer;
+  max-width: 50%;
+}
+.arrow-down {
+  display: block;
+  margin-left: 80px; /* Centers below button */
+  align-items: start;
+}
+.text {
+  width: 50%;
+  text-align: left;
+  align-items: start;
+  z-index: 3;
+}
+
+.content img {
+  width: 65%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  vertical-align: top;
+}
+
+.case-study img {
+  width: 50%;
+  height: 70%;
+  object-fit: contain;
+  z-index: 0;
+  vertical-align: top;
+  padding-right: 40px;
+}
+
+.first {
+  display: flex;
+  padding-left: 16px;
+  padding-bottom: 0px;
+  margin-bottom: 0px !important;
+  font-size: 18px;
+}
+
+.second {
+  display: flex;
+  padding-left: 16px;
+  padding-bottom: 0px;
+  margin-top: 8px !important;
+  font-size: 18px;
+}
+
+.third {
+  display: flex;
+  padding-left: 16px;
+  margin-top: 0px !important;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16x;
+  color: white;
+  padding-left: 40px;
+}
+
+.grouped {
+  position: relative; /* Create a positioning context for the pseudo-element */
+  padding-left: 0px; /* Add space for the vertical line */
+  border-left: rgb(199, 199, 199) 1px solid;
+  margin-left: 40px; /* Add space between the line and the content */
+}
+.swiper {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 1 !important;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border-radius: 50%;
+}
+.swiper-pagination-bullet-active {
+  transform: scale(1.5);
+}
+
+.swiper-pagination {
+  bottom: 20px !important;
+  right: 24px !important;
+  z-index: 10;
+}
+.swiper-wrapper {
+  transition-timing-function: cubic-bezier(
+    0.22,
+    1,
+    0.36,
+    1
+  ) !important; /* Material Design feel */
+}

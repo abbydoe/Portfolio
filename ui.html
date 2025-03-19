@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Abby Harris - Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">AH</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Resume</a>
+        <a href="#">LinkedIn</a>
+      </nav>
+    </header>
+
+    <section class="casestudies">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero-slide">
+            <section class="hero">
+              <div class="content">
+                <img class="image" src="images/Headshot.png" />
+                <div class="text">
+                  <h1>Abby Harris</h1>
+                  <div class="grouped">
+                    <h2 class="first">Product Designer</h2>
+                    <h2 class="second">Front-end Developer</h2>
+                  </div>
+                  <p>
+                    I have experience designing for responsive web, native
+                    mobile apps, and Figma plugins. I can code in HTML,CSS, and
+                    JavaScript too, so I’m basically a 2-1 solution!
+                  </p>
+                  <button onclick="scrollToSection()">See Case Studies</button>
+                  <svg
+                    class="arrow-down"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="white" d="M12 16L6 10h12z"></path>
+                  </svg>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <div class="content case-study">
+              <img class="image" src="images/FontTheme.png" />
+              <div class="text">
+                <h1>Font Theme</h1>
+                <h3>Figma Plugin</h3>
+                <div class="grouped">
+                  <h2 class="first">UI Design</h2>
+                  <h2 class="second">Front-end Development</h2>
+                </div>
+                <p>
+                  Search for font pairs that match the theme of your design.
+                  Save fonts and their weights as text styles with the click of
+                  a button.
+                </p>
+                <button onclick="location.href='your-resume-link.pdf'">
+                  Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content case-study">
+              <img class="image" src="images/Marcy.png" />
+              <div class="text">
+                <h1>Marcy K Salon</h1>
+                <h3>Salon Service and Booking Site</h3>
+                <div class="grouped">
+                  <h2 class="first">UX Research</h2>
+                  <h2 class="second">Responsive UI Design</h2>
+                </div>
+                <p>
+                  Integrated Calendly to reduce nonpaying customers and create a
+                  seamless booking and online payment experience. Conducted user
+                  interviews and competitive analyses.
+                </p>
+                <button onclick="location.href='your-resume-link.pdf'">
+                  Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="content case-study">
+              <img class="image" src="images/IceTime.png" />
+              <div class="text">
+                <h1>Ice Time</h1>
+                <h3>Native Mobile App</h3>
+                <div class="grouped">
+                  <h2 class="first">UI Design</h2>
+                </div>
+                <p>
+                  Locate rinks with freestyle sessions when traveling. Sign
+                  waivers, pay, and reserve ice time.
+                </p>
+                <button onclick="location.href='your-resume-link.pdf'">
+                  Case Study
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
