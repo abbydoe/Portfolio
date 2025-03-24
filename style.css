@@ -2,9 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #fff;
+  background-color: #000;
   max-width: 100%;
   overflow-x: hidden;
+}
+#header {
+  background-color: #333; /* Ensure it's above other elements */
+  color: white; /* Ensure text is readable on dark background */
 }
 header {
   display: flex;
@@ -92,7 +97,7 @@ header nav a {
 }
 .content p {
   font-size: 18px;
-  margin-top: 40px;
+  margin: 32px 0px 32px 0px;
   padding-left: 40px;
   max-width: 500px;
   line-height: 29.124px;
@@ -106,8 +111,10 @@ header nav a {
   background-color: transparent;
   color: white;
   border: white 1px solid;
+  border-radius: 8px;
   cursor: pointer;
   max-width: 50%;
+  padding: 8px 32px 8px 32px;
 }
 .arrow-down {
   display: block;
@@ -149,7 +156,8 @@ header nav a {
   display: flex;
   padding-left: 16px;
   padding-bottom: 0px;
-  margin-bottom: 0px !important;
+  margin-top: 24px !important;
+  margin-bottom: 8px !important;
   font-size: 18px;
 }
 
@@ -157,7 +165,7 @@ header nav a {
   display: flex;
   padding-left: 16px;
   padding-bottom: 0px;
-  margin-top: 8px !important;
+  margin-top: 0px !important;
   font-size: 18px;
 }
 

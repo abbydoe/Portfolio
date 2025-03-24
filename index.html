@@ -17,23 +17,29 @@
     <title>Abby Harris - Portfolio</title>
   </head>
   <body>
-    <header>
-      <div class="logo">AH</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Resume</a>
-        <a href="#">LinkedIn</a>
-      </nav>
-    </header>
-
+    <div id="header">
+      <header>
+        <div class="logo">AH</div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#" id="resumeLink">Resume</a>
+          <a
+            href="https://www.linkedin.com/in/harris-abigail/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </nav>
+      </header>
+    </div>
     <section class="casestudies">
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide hero-slide">
             <section class="hero">
               <div class="content">
-                <img class="image" src="images/Headshot.png" />
+                <img class="image" src="assets/Headshot.png" />
                 <div class="text">
                   <h1>Abby Harris</h1>
                   <div class="grouped">
@@ -45,7 +51,7 @@
                     mobile apps, and Figma plugins. I can code in HTML,CSS, and
                     JavaScript too, so I’m basically a 2-1 solution!
                   </p>
-                  <button onclick="scrollToSection()">See Case Studies</button>
+                  <button onclick="scrollToSection()">Case Studies</button>
                   <svg
                     class="arrow-down"
                     width="30"
@@ -60,8 +66,14 @@
           </div>
           <div class="swiper-slide">
             <div class="content case-study">
-              <video muted playsinline loop preload="auto" class="auto-play-video">
-                <source src="images/PluginDemo.mov" />
+              <video
+                muted
+                playsinline
+                loop
+                preload="auto"
+                class="auto-play-video"
+              >
+                <source src="assets/PluginDemo.mov" />
               </video>
               <div class="text">
                 <h1>Font Theme</h1>
@@ -75,7 +87,7 @@
                   Save fonts and their weights as text styles with the click of
                   a button.
                 </p>
-                <button onclick="location.href='your-resume-link.pdf'">
+                <button onclick="location.href='plugin.html'">
                   Case Study
                 </button>
               </div>
@@ -83,7 +95,7 @@
           </div>
           <div class="swiper-slide">
             <div class="content case-study">
-              <img class="image" src="images/Marcy.png" />
+              <img class="image" src="assets/Marcy.png" />
               <div class="text">
                 <h1>Marcy K Salon</h1>
                 <h3>Salon Service and Booking Site</h3>
@@ -96,16 +108,14 @@
                   seamless booking and online payment experience. Conducted user
                   interviews and competitive analyses.
                 </p>
-                <button onclick="location.href='your-resume-link.pdf'">
-                  Case Study
-                </button>
+                <button onclick="location.href='salon.html'">Case Study</button>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="content case-study">
-              <img class="image" src="images/IceTime.png" />
+              <img class="image" src="assets/IceTime.png" />
               <div class="text">
                 <h1>Ice Time</h1>
                 <h3>Native Mobile App</h3>
@@ -116,9 +126,7 @@
                   Locate rinks with freestyle sessions when traveling. Sign
                   waivers, pay, and reserve ice time.
                 </p>
-                <button onclick="location.href='your-resume-link.pdf'">
-                  Case Study
-                </button>
+                <button onclick="location.href='ice.html'">Case Study</button>
               </div>
             </div>
           </div>
