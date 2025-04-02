@@ -70,3 +70,150 @@ if (document.querySelector(".swiper")) {
       document.body.removeChild(downloadLink);
     });
 }
+
+const jsondata = {
+  leftColumn: [
+    {
+      image: "assets/Figma.png",
+      text: {
+        bold: "Figma",
+        regular: " for wireframing and prototyping",
+      },
+    },
+    {
+      image: "assets/PS.png",
+      text: {
+        bold: "Photoshop",
+        regular:
+          " for picture tweaks. i.e. I removed polka dots and red bows from my sweater on the home screen",
+      },
+    },
+    {
+      image: "assets/Dovetail.png",
+      text: {
+        bold: "Dovetail",
+        regular: " for analyzing user interviews and usability test data",
+      },
+    },
+    {
+      image: "assets/Jira.png",
+      text: {
+        bold: "Jira",
+        regular: " for Sprint planning and assigning coding tasks to devs",
+      },
+    },
+    {
+      image: "assets/MS.png",
+      text: {
+        bold: "MS Word",
+        regular:
+          " for writing usability test plans and keeping track of research",
+      },
+    },
+    {
+      image: "assets/Calendly.png",
+      text: {
+        bold: "Figma",
+        regular: " to schedule user interviews and usability tests",
+      },
+    },
+    // You can add more items like this if needed
+  ],
+  rightColumn: [
+    {
+      image: "assets/Github.png",
+      text: {
+        bold: "GitHub",
+        regular: " for storing coding projects.",
+      },
+    },
+    {
+      image: "assets/Vercel.png",
+      text: {
+        bold: "Vercel",
+        regular: " for hosting this portfolio.",
+      },
+    },
+    {
+      image: "assets/VS.png",
+      text: {
+        bold: "VS Code",
+        regular: " for...coding lol",
+      },
+    },
+    {
+      image: "assets/Postman.png",
+      text: {
+        bold: "Postman",
+        regular: " to test API calls and make sure they work",
+      },
+    },
+    {
+      image: "assets/Zoom.png",
+      text: {
+        bold: "Zoom",
+        regular: " to record user-interviews and usabilityt tests",
+      },
+    },
+    {
+      image: "assets/Slack.png",
+      text: {
+        bold: "Slack",
+        regular: " to communicate with the people I collaborate with",
+      },
+    },
+    {
+      image: "assets/Teams.png",
+      text: {
+        bold: "MS Teams",
+        regular:
+          " used this at Fidelity Investments for meetings and co-worker chats.",
+      },
+    },
+  ],
+};
+// Only run this if the special container exists
+let container = document.getElementById("left");
+
+if (container) {
+  jsondata.leftColumn.forEach((item) => {
+    const div = document.createElement("div");
+    div.style.display = "flex";
+    div.style.alignItems = "center";
+    div.style.marginBottom = "10px";
+
+    const img = document.createElement("img");
+    img.src = item.image;
+    img.alt = "Icon";
+    img.style.width = "50px";
+    img.style.height = "50px";
+    img.style.marginRight = "24px";
+
+    const p = document.createElement("p");
+    p.innerHTML = `<strong>${item.text.bold}</strong>${item.text.regular}`;
+
+    div.appendChild(img);
+    div.appendChild(p);
+    container.appendChild(div);
+  });
+}
+container = document.getElementById("right");
+jsondata.rightColumn.forEach((item) => {
+  const div = document.createElement("div");
+  div.style.display = "flex";
+  div.style.alignItems = "center";
+  div.style.marginBottom = "10px";
+
+  const img = document.createElement("img");
+  img.src = item.image;
+  img.alt = "Icon";
+  img.style.width = "50px";
+  img.style.height = "50px";
+  img.style.marginRight = "24px";
+
+  const p = document.createElement("p");
+  p.innerHTML = `<strong>${item.text.bold}</strong>${item.text.regular}`;
+  div.appendChild(img);
+  div.appendChild(p);
+  container.appendChild(div);
+});
