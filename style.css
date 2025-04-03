@@ -290,6 +290,15 @@ ul {
   margin: 40px 40px;
   height: 100vh;
 }
+.column-container-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; /* vertically align */
+  justify-content: space-between;
+  margin: 40px 40px;
+  height: 100vh;
+  gap: 64px;
+}
 
 .nested-container1,
 .nested-container2 {
@@ -301,17 +310,12 @@ ul {
 
 .text-column {
   flex: 1; /* take up half the width */
-  max-width: 45%;
 }
 .text-column h1 {
   font-size: 40px;
   margin-bottom: 2.5rem;
   padding: 0px;
 }
-/* .text-column p {
-  font-size: 24px;
-  color: rgb(199, 199, 199);
-} */
 
 .image-column {
   flex: 1;
@@ -322,10 +326,6 @@ ul {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.text-column {
-  flex: 1; /* take up half the width */
 }
 
 .icon-column {
@@ -367,4 +367,20 @@ ul {
 
 .text {
   width: auto;
+}
+
+.column-container.double {
+  height: 70vh;
+}
+
+.Screen6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* adds space between items */
+  margin: 100px 40px 40px 40px;
+}
+.topMargin {
+  margin-top: 100px;
+  margin-left: 40px;
 }
