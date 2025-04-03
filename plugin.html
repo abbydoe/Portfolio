@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -24,70 +28,121 @@
       </header>
     </div>
     <!-- HTML -->
-    <div class="Screen1">
-      <div class="column-container">
-      <div class="text-column">
-        <h1>
-          Font Theme is an AI-powered Figma plugin that pairs fonts based on a
-          design theme and saves them as text-styles in your Figma file.
-        </h1>
-        <div class="nested-container1">
-          <div class="icon-column">
-            <img src="assets/people.svg" alt="peopleicon" />
-          </div>
-          <div class="body-column">
-            <p>
-              The design was done in one day, but the implementation took 2
-              months. Testing is ongoing.
-            </p>
-          </div>
-        </div>
-        <div class="nested-container2">
-          <div class="icon-column">
-            <img src="assets/Timer.svg" alt="peopleicon" />
-          </div>
-          <div class="body-column">
-            <p>
-              Me, the UI Designer and mostly front-end developer. Puskar Dev, a
-              skilled back-end developer who taught me JavaScript.
-            </p>
-          </div>
-      </div>
-    
-    </div>
-    <div class="image-column">
-      <img src="assets/Hero-Img.svg" alt="Landing screen for font theme plugin. Search for a theme." />
-    </div>
-  </div>
-  <div class="Screen2">
-        <div class="column-container">
-          <div class="text-column">
-            <h1>
-              What prompted this project?
-            </h1>
-            <div class="nested-container1">
-              <div class="body-column">
-                <h2>A personal problem</h2>
-                <p>
-                  I needed help choosing a font pair for my current project, Synergy. I found several plugins that matched fonts, but none that described the vibe the fonts would go well with.
-                </p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="column-container">
+            <div class="text-column">
+              <h1>
+                Font Theme is an AI-powered Figma plugin that pairs fonts based
+                on a design theme and saves them as text-styles in your Figma
+                file.
+              </h1>
+              <div class="nested-container1">
+                <div class="icon-column">
+                  <img src="assets/people.svg" alt="peopleicon" />
+                </div>
+                <div class="body-column">
+                  <p>
+                    The design was done in one day, but the implementation took
+                    2 months. Testing is ongoing.
+                  </p>
+                </div>
+              </div>
+              <div class="nested-container2">
+                <div class="icon-column">
+                  <img src="assets/Timer.svg" alt="peopleicon" />
+                </div>
+                <div class="body-column">
+                  <p>
+                    Me, the UI Designer and mostly front-end developer. Puskar
+                    Dev, a skilled back-end developer who taught me JavaScript.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="nested-container2">
-              <div class="body-column">
-                <h2>The idea</h2>
-                <p>
-                I decided to create a plugin for my own use. Then I realized a lot of newer designers may not be familiar with typography, so this can help familiarize them with it.
-                </p>
-              </div>
+            <div class="image-column">
+              <img
+                src="assets/Hero-Img.svg"
+                alt="Landing screen for font theme plugin. Search for a theme."
+              />
+            </div>
           </div>
-        
         </div>
-        <div class="image-column">
-          <img src="assets/Bad-Plugins.svg" alt="font pair, better font picker, accidentally great font pairings" />
+        <div class="swiper-slide">
+          <div class="column-container">
+            <div class="text-column">
+              <h1>What prompted this project?</h1>
+              <div class="nested-container1">
+                <div class="body-column">
+                  <h2>A personal problem</h2>
+                  <p>
+                    I needed help choosing a font pair for my current project,
+                    Synergy. I found several plugins that matched fonts, but
+                    none that described the vibe the fonts would go well with.
+                  </p>
+                </div>
+              </div>
+              <div class="nested-container2">
+                <div class="body-column">
+                  <h2>The idea</h2>
+                  <p>
+                    I decided to create a plugin for my own use. Then I realized
+                    a lot of newer designers may not be familiar with
+                    typography, so this can help familiarize them with it.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="image-column">
+              <img
+                src="assets/Bad-Plugins.svg"
+                alt="font pair, better font picker, accidentally great font pairings"
+              />
+            </div>
+          </div>
         </div>
+        <div class="swiper-slide">
+          <div class="Screen3">
+            <div class="text">
+              <h1>
+                I did not follow a traditional UX process for this plugin...
+              </h1>
+              <div class="column-container-sandwich">
+                <div class="text-column">
+                  <div class="body-column">
+                    <h2>Ummmm why not?</h2>
+                    <p>
+                      Since the plugin relies on an AI API call to display font
+                      pair results and interacts with Figma’s API to create text
+                      styles, it wasn’t feasible to create a prototype that
+                      mimicked this behavior for testing.
+                    </p>
+                  </div>
+                </div>
+                <div class="text-column">
+                  <div class="body-column">
+                    <h2>Sooo what did I do then?</h2>
+                    <p>
+                      I created low-fi wireframes, coded the plugin, published
+                      it, and THEN recruited users to try it out. <br />I’m
+                      keeping track of the feedback I receive until I have
+                      enough to group into common themes to iterate on.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="assets/Blue-wave.svg"
+              alt=" an image of the design process I followed"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
