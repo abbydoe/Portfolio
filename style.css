@@ -385,3 +385,19 @@ ul {
   display: flex;
   justify-content: center;
 }
+
+.body-column ul {
+  list-style-type: circle;
+}
+.body-column ul li {
+  margin: 1rem;
+}
+.H1 {
+  margin-bottom: 0% !important;
+  margin-top: 32px !important;
+}
+
+.image-column.codeSnip {
+  flex: none;
+  height: 100vh;
+}
