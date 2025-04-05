@@ -97,9 +97,20 @@ h1 {
   font-weight: 400;
   color: white;
 }
+ul li,
+ol li {
+  margin: 0;
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 29.124px;
+  font-family: "verdana", sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+  color: white;
+}
 p {
   font-size: 18px;
-  max-width: 500px;
+  max-width: 700px;
   line-height: 29.124px;
   font-family: "verdana", sans-serif;
   font-weight: regular;
@@ -310,6 +321,7 @@ ul {
 
 .text-column {
   flex: 1; /* take up half the width */
+  padding-top: 32px;
 }
 .text-column h1 {
   font-size: 40px;
@@ -400,4 +412,15 @@ ul {
 .image-column.codeSnip {
   flex: none;
   height: 100vh;
+}
+
+.centered-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.row {
+  max-width: 700px;
 }
