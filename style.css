@@ -424,3 +424,7 @@ ul {
 .row {
   max-width: 700px;
 }
+a img {
+  vertical-align: middle;
+  height: 1em; /* makes it scale like text */
+}
