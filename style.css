@@ -391,6 +391,10 @@ ul {
   width: 100%;
 }
 
+.column-container.codeSnip {
+  height: auto;
+}
+
 .text-column.Margin {
   margin-top: 100px;
   margin-left: 40px;
