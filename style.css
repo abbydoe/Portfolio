@@ -297,17 +297,17 @@ ul {
 .column-container {
   display: flex;
   align-items: center; /* vertically align */
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 40px 40px;
-  height: 100vh;
+  height: 80vh;
 }
 .column-container-reverse {
   display: flex;
   flex-direction: row-reverse;
   align-items: center; /* vertically align */
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 40px 40px;
-  height: 100vh;
+  height: 80vh;
   gap: 64px;
 }
 
@@ -322,6 +322,7 @@ ul {
 .text-column {
   flex: 1; /* take up half the width */
   padding-top: 32px;
+  max-width: 800px;
 }
 .text-column h1 {
   font-size: 40px;
@@ -353,15 +354,14 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center; /* adds space between items */
-  margin: 40px 40px;
-  height: 100vh;
+  height: 80vh;
 }
 .column-container-sandwich {
   height: auto;
   padding: 0px;
   display: flex;
   align-items: center; /* vertically align */
-  justify-content: space-between;
+  justify-content: around;
   margin-top: 32px;
 }
 .Screen3 h1 {
@@ -387,7 +387,7 @@ ul {
   align-items: center; /* vertically align */
   align-items: flex-start;
   justify-content: space-around;
-  height: 100 vh;
+  height: 80vh;
   width: 100%;
 }
 
@@ -427,4 +427,7 @@ ul {
 a img {
   vertical-align: middle;
   height: 1em; /* makes it scale like text */
+}
+.wave {
+  width: 100%;
 }
